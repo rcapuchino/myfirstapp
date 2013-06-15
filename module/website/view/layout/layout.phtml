@@ -1,0 +1,24 @@
+<?php echo $this->doctype(); ?>
+<html>
+    <head>
+        <?php echo $this->headMeta()->appendName('viewport','width=device-width, initial-scale=1.0, maximo-scale=1.0, user-scalabled=0') ; ?>
+        <?php echo $this->headLink()->appendStylesheet('css/bootstrap.css','screen') ?>
+        <?php echo $this->headLink()->appendStylesheet('css/bootstrap-responsive.css','screen') ?>
+        <?php echo $this->headLink()->appendStylesheet('css/mycss.css','screen') ?>
+        
+    </head>
+    <body>
+        <header>
+            header
+        </header>
+        <div class="hidden-phone" style="border-bottom: solid 2px #df8585; background-color: #000; color: #fff;">
+            aqui sera un menu
+        </div>
+        <div class="container">
+           <?php echo $this->content;?>
+        </div>
+        <footer>
+            fooot
+        </footer>
+    </body>
+</html>

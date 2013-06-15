@@ -1,0 +1,55 @@
+<div class="fluid-row">
+    <br>
+    <?php  echo $this->services?>
+    <br>
+    <br>
+     <?php  echo "Total de servicios ".count($this->services)." hasta el momento"; ?>
+    <br>
+    <br>
+    <?php
+        echo $this->services[0].'<br>';
+        echo $this->services[1].'<br>';
+        echo $this->services[2].'<br>';
+        echo $this->services[3].'<br>';
+        echo $this->services[4].'<br>';
+        echo $this->services[5].'<br>';
+        echo $this->services[6].'<br>';
+    ?>
+    <br>
+    <br>
+    <?php
+    for ($x=0;$x<count($this->services);$x++){
+        echo "Servicio ".$this->services[$x]."<br>";
+    }
+    ?>
+    <br>
+    <?php
+    $x=0;
+    while ($x<count($this->services)) {
+        echo "Servicio ".$this->services[$x]."<br>";
+        $x++;
+    }
+    ?>
+    <br>
+    <?php
+    $x=0;
+     do{
+         echo "Servicio ".$this->services[$x]."<br>";
+        $x++; 
+     }while ($x<count($this->services))
+    ?>
+    <br>
+    <?php
+       foreach ($this->services as $element){
+           echo "Servicio".$element."<br>";
+       }
+    ?>
+    <br>
+    <?php
+        foreach ($this->hosting as $elementos){
+        echo $elementos['space']."<br>";
+        }
+    ?>
+    <br>
+    Saludos yo soy <?php echo $this->nombre;?>
+</div>
